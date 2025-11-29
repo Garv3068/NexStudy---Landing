@@ -3,36 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NexStudy – Your AI Study Planner</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>NexStudy – Free AI Academic Companion</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">NexStudy</div>
+      <div class="nav-actions">
+        <a href="https://studywith-nexstudy.streamlit.app/" class="nav-link" target="_blank" rel="noopener">
+          Open App
+        </a>
+        <button class="nav-cta" onclick="scrollToSection('signup')">
+          Get Early Access
+        </button>
+      </div>
+    </nav>
 
-  <header>
-    <h1>NexStudy</h1>
-    <p>Your AI-powered study companion for smarter learning.</p>
-    <a href="https://studywith-nexstudy.streamlit.app" class="cta-btn">Open App</a>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>The Unlimited, Free AI Academic Companion</h1>
+        <p>
+          Solve doubts, crack past papers, plan your studies, generate quizzes,
+          create audio notes, and debug code – all in one place.
+        </p>
+        <div class="hero-actions">
+          <a href="https://studywith-nexstudy.streamlit.app/" class="btn primary"
+             target="_blank" rel="noopener">
+            Launch NexStudy App
+          </a>
+          <button class="btn ghost" onclick="scrollToSection('features')">
+            View Features
+          </button>
+        </div>
+        <p class="hero-caption">
+          No usage limits. Designed for school & college students.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <div class="mock-screen">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <div class="mock-body">
+            <h3>NexStudy Dashboard</h3>
+            <ul>
+              <li>Smart Tutor · Doubt Solver</li>
+              <li>Past Paper Solver · MCQ Keys</li>
+              <li>Study Planner · Flashcards</li>
+              <li>AI Coding Studio · Audio Notes</li>
+            </ul>
+            <a href="https://studywith-nexstudy.streamlit.app/"
+               class="mini-btn" target="_blank" rel="noopener">
+              Open Live App →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section class="features">
-    <h2>Why NexStudy?</h2>
-    <div class="feature">
-      <h3>📘 Smart Study Plans</h3>
-      <p>Get personalized daily schedules based on your syllabus.</p>
-    </div>
-    <div class="feature">
-      <h3>⚡ AI-powered Tools</h3>
-      <p>Notes, Q&A, exam analysis — all in one place.</p>
-    </div>
-    <div class="feature">
-      <h3>📊 Progress Tracking</h3>
-      <p>See your learning trends and improve faster.</p>
-    </div>
-  </section>
+  <main>
+    <section id="features" class="section">
+      <h2>Everything you need to study smarter</h2>
+      <p class="section-subtitle">
+        NexStudy brings all your essential AI study tools into one clean,
+        distraction‑free workspace.
+      </p>
 
-  <footer>
-    <p>© 2025 NexStudy • All rights reserved</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Smart AI Tutor</h3>
+          <p>
+            Ask questions, upload homework images or PDFs, and get clear,
+            step‑by‑step explanations like a 24×7 personal teacher.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Past Paper Solver</h3>
+          <p>
+            Upload previous year papers and instantly generate answer keys,
+            MCQ explanations, and worked solutions for numerical problems.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Summarizer & Quiz Maker</h3>
+          <p>
+            Turn long notes or chapters into concise summaries, MCQs, and
+            flashcards so revision becomes fast and focused.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Study Planner & Dashboard</h3>
+          <p>
+            Upload your syllabus, set exam dates, and get a day‑by‑day plan
+            with simple progress tracking.
+          </p>
+        </div>
+        <div class="card">
+          <h3>AI Coding Studio</h3>
+          <p>
+            Generate code, debug errors, and learn Python/JS step by step with
+            explanations tailored for beginners.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Audio Notes Studio</h3>
+          <p>
+            Convert notes or PDFs into podcasts and transcribe lecture
+            recordings so you can revise on the go.
+          </p>
+        </div>
+      </div>
+
+      <div class="center-gap">
+        <a href="https://studywith-nexstudy.streamlit.app/"
+           class="btn primary" target="_blank" rel="noopener">
+          Try NexStudy Now
+        </a>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <h2>Why students love NexStudy</h2>
+      <div class="grid two">
+        <div>
+          <ul class="bullets">
+            <li>All‑in‑one app instead of 5 different tools.</li>
+            <li>Private by design – your notes stay in your workspace.</li>
+            <li>Built specially for Indian school and college exams.</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="bullets">
+            <li>Perfect for daily homework, tests, and finals.</li>
+            <li>Works on laptop, tablet, and mobile screens.</li>
+            <li>Free to use while in beta – no credit card needed.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup" class="section cta">
+      <h2>Get early access to new features</h2>
+      <p class="section-subtitle">
+        Join the early‑user list and be the first to try new tools, give
+        feedback, and shape NexStudy’s roadmap.
+      </p>
+
+      <form
+        class="signup-form"
+        action="https://formspree.io/f/your-form-id"
+        method="POST"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="College / school email"
+          required
+        />
+        <button type="submit" class="btn primary">
+          Join the Waitlist
+        </button>
+      </form>
+
+      <p class="tiny">
+        No spam. You’ll only receive important product updates and access
+        links.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      © <span id="year"></span> NexStudy • Built by students for students.
+      &nbsp;|&nbsp;
+      <a href="https://studywith-nexstudy.streamlit.app/" target="_blank" rel="noopener">
+        Open main app
+      </a>
+    </p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
