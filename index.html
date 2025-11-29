@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexStudy - The Unlimited AI Academic Companion</title>
+    <meta name="description" content="Free AI Study Planner, Past Paper Solver, and Audio Notes generator for students. Unlimited access with your own API key.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at top right, #e0e7ff 0%, #ffffff 40%);
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-brain text-indigo-600 text-2xl"></i>
+                    <span class="font-bold text-xl tracking-tight">NexStudy</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                    <a href="#features" class="hover:text-indigo-600 transition">Features</a>
+                    <a href="#how-it-works" class="hover:text-indigo-600 transition">How it Works</a>
+                    <a href="#faq" class="hover:text-indigo-600 transition">FAQ</a>
+                </div>
+                <!-- LINK TO YOUR STREAMLIT APP HERE -->
+                <a href="https://studywith-nexstudy.streamlit.app/" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full font-medium transition shadow-lg shadow-indigo-200">
+                    Launch App 🚀
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 text-sm font-semibold">
+                ✨ Free & Open Source Alternative to StudyX
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-gray-900">
+                Study Without <span class="gradient-text">Limits.</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                The all-in-one AI companion that solves papers, plans schedules, and turns notes into podcasts. Bring your own key. Pay $0.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://studywith-nexstudy.streamlit.app/" target="_blank" class="px-8 py-4 bg-gray-900 text-white rounded-xl font-semibold hover:bg-gray-800 transition shadow-xl flex items-center justify-center gap-2">
+                    Get Started for Free <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://github.com/YOUR-USERNAME/NexStudy" target="_blank" class="px-8 py-4 bg-white text-gray-700 border border-gray-200 rounded-xl font-semibold hover:bg-gray-50 transition flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-github"></i> Star on GitHub
+                </a>
+            </div>
+            
+            <!-- Hero Image / Mockup Placeholder -->
+            <div class="mt-16 relative mx-auto max-w-4xl">
+                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl blur opacity-30"></div>
+                <div class="relative bg-white rounded-xl border border-gray-200 shadow-2xl overflow-hidden">
+                    <!-- REPLACE THIS WITH YOUR SCREENSHOT URL LATER -->
+                    <img src="https://via.placeholder.com/1200x675/f3f4f6/1f2937?text=NexStudy+Dashboard+Preview" alt="App Interface" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Everything you need to ace exams</h2>
+                <p class="text-gray-600">Replaces 5 different paid tools with one free platform.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-indigo-100 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition">
+                        <i class="fa-solid fa-calendar-check text-indigo-600 text-xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI Syllabus Planner</h3>
+                    <p class="text-gray-600">Upload your messy syllabus PDF. Get a perfectly optimized day-by-day study schedule instantly.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-purple-100 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-600 transition">
+                        <i class="fa-solid fa-headphones text-purple-600 text-xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Audio Notes Studio</h3>
+                    <p class="text-gray-600">Turn boring chapters into engaging podcasts. Listen while you commute or walk to class.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-blue-100 hover:shadow-lg transition group">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition">
+                        <i class="fa-solid fa-file-pen text-blue-600 text-xl group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Past Paper Solver</h3>
+                    <p class="text-gray-600">Upload exam photos or PDFs. Get step-by-step solutions without hitting any daily credit limits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works (Privacy) -->
+    <section id="how-it-works" class="py-24 bg-gray-900 text-white overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Why is it free?</h2>
+                    <p class="text-gray-400 mb-6 text-lg">
+                        Most apps charge you because they pay for the AI compute. NexStudy connects directly to Google's Gemini API using <strong>your own free key</strong>.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check-circle text-green-400 mt-1"></i>
+                            <div>
+                                <strong class="block text-white">Unlimited Usage</strong>
+                                <span class="text-gray-400 text-sm">Solve 10 or 1,000 questions. No limits.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-shield-halved text-green-400 mt-1"></i>
+                            <div>
+                                <strong class="block text-white">Privacy First</strong>
+                                <span class="text-gray-400 text-sm">No login required. We don't store your data.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-indigo-600 rounded-full blur-3xl opacity-20"></div>
+                    <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 relative">
+                        <pre class="font-mono text-sm text-green-400 overflow-x-auto">
+# The Magic behind NexStudy
+import google.generativeai as genai
+
+def solve_doubt(image, user_key):
+    genai.configure(api_key=user_key)
+    model = genai.GenerativeModel('gemini-2.0-flash')
+    return model.generate_content([image, "Solve this"])
+                        </pre>
+                        <p class="mt-4 text-gray-400 text-sm">Simple, transparent, open-source code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Common Questions</h2>
+            
+            <div class="space-y-6">
+                <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-gray-900 list-none">
+                        Is it really free?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        Yes! NexStudy is open-source. You just need a free Google Gemini API key (which takes 2 minutes to get). We don't charge any subscriptions.
+                    </p>
+                </details>
+
+                <details class="group p-6 bg-gray-50 rounded-xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-semibold text-gray-900 list-none">
+                        Does it work on mobile?
+                        <span class="transition group-open:rotate-180">
+                            <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        Absolutely. The interface is fully responsive and works great on phones and tablets.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-12 border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <i class="fa-solid fa-brain text-indigo-600"></i>
+                <span class="font-bold text-gray-900">NexStudy</span>
+            </div>
+            <p class="text-gray-500 text-sm mb-8">Built with ❤️ for students, by a student.</p>
+            <div class="flex justify-center gap-6 text-gray-400">
+                <a href="#" class="hover:text-indigo-600"><i class="fa-brands fa-twitter text-xl"></i></a>
+                <a href="#" class="hover:text-indigo-600"><i class="fa-brands fa-github text-xl"></i></a>
+                <a href="#" class="hover:text-indigo-600"><i class="fa-brands fa-reddit text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
