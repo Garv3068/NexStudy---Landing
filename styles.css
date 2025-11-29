@@ -415,3 +415,46 @@ body {
     font-size: 2.1rem;
   }
 }
+/* Brand / logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-logo {
+  height: 42px;              /* fixed height so navbar stays neat */
+  width: auto;               /* keep aspect ratio */
+  border-radius: 10px;       /* soften corners; adjust if you want full square */
+  object-fit: contain;       /* no stretching */
+  display: block;
+  box-shadow: 0 0 14px rgba(148, 163, 184, 0.6);
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.brand-tagline {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+/* Smaller on mobile so it never breaks layout */
+@media (max-width: 600px) {
+  .brand-logo {
+    height: 34px;
+  }
+  .brand-name {
+    font-size: 0.88rem;
+  }
+}
