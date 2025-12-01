@@ -12,7 +12,9 @@
         content="NexStudy, AI study helper, past paper solver, study planner, quiz generator, audio notes, AI coding studio, student productivity" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://studywith-nexstudy.vercel.app/" />
-  <meta name="google-site-verification" content="google08ae599a27613334.html" />
+  
+  <!-- ✅ FIXED GOOGLE VERIFICATION TAG -->
+  <meta name="google-site-verification" content="kVXn_U161D1Oeng7FqhaaHApCMG2VyQsJrGjTRzp14I" />
 
   <!-- Open Graph (social preview) -->
   <meta property="og:type" content="website" />
@@ -52,8 +54,9 @@
            class="nav-link" target="_blank" rel="noopener">
           Open App
         </a>
-        <button class="nav-cta" onclick="scrollToSection('signup')">
-          Get Early Access
+        <!-- Adjusted link to scroll to features since signup section was commented out -->
+        <button class="nav-cta" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+          Get Started
         </button>
       </div>
     </nav>
@@ -70,7 +73,7 @@
              class="btn primary" target="_blank" rel="noopener">
             Launch NexStudy App
           </a>
-          <button class="btn ghost" onclick="scrollToSection('features')">
+          <button class="btn ghost" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
             View Features
           </button>
         </div>
@@ -182,46 +185,11 @@
         </div>
       </div>
     </section>
-
-    <!-- <section id="signup" class="section cta"> -->
-      <!-- <h2>Get early access to new features</h2> -->
-      <!-- <p class="section-subtitle"> -->
-        <!-- Join the early‑user list and be the first to try new tools, give -->
-        <!-- feedback, and shape NexStudy’s roadmap. -->
-      <!-- </p> -->
-
-      <!-- <form -->
-        <!-- class="signup-form" -->
-        <!-- action="https://formspree.io/f/your-form-id" -->
-        <!-- method="POST" -->
-      <!-- > -->
-        <!-- <input -->
-          <!-- type="text" -->
-          <!-- name="name" -->
-          <!-- placeholder="Your name" -->
-          <!-- required -->
-        <!-- /> -->
-        <!-- <input -->
-          <!-- type="email" -->
-          <!-- name="email" -->
-          <!-- placeholder="College / school email" -->
-          <!-- required -->
-        <!-- /> -->
-        <!-- <button type="submit" class="btn primary"> -->
-          <!-- Join the Waitlist -->
-        <!-- </button> -->
-      <!-- </form> -->
-
-      <!-- <p class="tiny"> -->
-        <!-- No spam. You’ll only receive important product updates and access -->
-        <!-- links. -->
-      <!-- </p> -->
-    <!-- </section> -->
   </main>
 
   <footer class="footer">
     <p>
-      © <span id="year"></span> NexStudy • Built by students for students.
+      © <span id="year">2025</span> NexStudy • Built by students for students.
       &nbsp;|&nbsp;
       <a href="https://studywith-nexstudy.streamlit.app/"
          target="_blank" rel="noopener">
@@ -230,6 +198,9 @@
     </p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Simple script to handle scroll interactions if needed
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
