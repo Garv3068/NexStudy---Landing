@@ -107,6 +107,47 @@
   </header>
 
   <main>
+
+    <!-- 🔹 NEW: Rotating cube section in the blank area -->
+    <section class="section cube-section">
+      <h2>Explore NexStudy tools</h2>
+      <p class="section-subtitle">
+        Hover or tap the cube and click a face to jump straight into a tool.
+      </p>
+
+      <div class="cube-wrapper">
+        <div class="scene">
+          <div class="cube">
+            <button class="face front"
+                    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+              AI Tutor
+            </button>
+            <button class="face back"
+                    onclick="window.open('https://studywith-nexstudy.streamlit.app/', '_blank')">
+              AI Coding Studio
+            </button>
+            <button class="face right"
+                    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+              Past Paper Solver
+            </button>
+            <button class="face left"
+                    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+              Study Planner
+            </button>
+            <button class="face top"
+                    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+              Audio Notes
+            </button>
+            <button class="face bottom"
+                    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+              Summarizer &amp; Quiz Maker
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 🔹 END cube section -->
+
     <section id="features" class="section">
       <h2>Everything you need to study smarter</h2>
       <p class="section-subtitle">
@@ -200,7 +241,6 @@
   </footer>
 
   <script>
-    // Simple script to handle scroll interactions if needed
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
