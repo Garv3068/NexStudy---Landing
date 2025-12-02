@@ -1,5 +1,5 @@
 <div align="center">
-<img src="logo.png" alt="NexStudy Logo" width="200">
+<img src="Nexstudy.jpg" alt="NexStudy Logo" width="200">
 <h1>NexStudy 🧠</h1>
 <h3>The Unlimited, Free AI Academic Companion</h3>
 
